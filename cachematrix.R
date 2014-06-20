@@ -33,7 +33,7 @@ makeCacheMatrix <- function(x = matrix()) {
     ## set the value of the matrix to be solved for its inverse
     set <- function(y) {
       x <<- y
-      i <<- NULL
+      i <<- NULL  ## reset the cached inverse
     }
     
     ## get the value of the matrix to be solved for its inverse
